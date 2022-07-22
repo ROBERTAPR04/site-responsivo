@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC&family=Edu+TAS+Beginner&family=Poppins:wght@100&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Cormorant SC', serif;;
+    
+}
+
+
+
+html {
+    font-size: 2vmax;
+}
+
+header{
+    width:100vw;
+    height: 150px;
+    background-color:#ffb5c5;
+    padding-top: 15px;
+    position: fixed;
+
+}
+
+#logo {
+    width:10%;
+    float: left;
+}
+#logo img{
+    width: 100%;
+}
+
+#titulo{
+    width:65%;
+    float:left;
+    display: flex;  
+}
+#titulo h1{
+    color: #ee30a7;
+    text-align: justify;
+    margin-top: 40px;
+    font-size: 1.5rem;
+    width: 100%;
+    margin-left: 450px;
+}
+
+nav{
+    width: 100vw;
+    border-top: 2px solid #ee30a7;
+    border-bottom: 2px solid #ee30a7;
+    margin-top: 150px;
+    position: fixed;
+    background-color: #fff;
+    
+
+}
+
+nav ul li {
+    list-style: none;
+    float: left;
+    text-align: center;
+    width: calc(100vw / 3);
+}
+
+nav ul li a{
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: #ee30a7;
+    font-size: 1rem;
+    font-weight: bold;
+    border-right: 2px solid #ee30a7;
+}
+
+nav ul li a:hover{
+    color:#fff;
+    background-color: #ee30a7;
+}
+
+section{
+    min-height: 150vh;
+    padding-top: 200px;
+    color: #fff;
+}
+#inicio{
+    min-height: 250vh;
+}
+#faleconosco{
+    min-height: 80vh;
+}
+#quemsomos{
+    min-height: 60vh;
+}
+#imagem img {
+    border-radius: 10px 15px 10px 15px;
+    width: 80%;
+    display: block;
+    float: left;  
+}
+#texto {
+    width: 100%;
+}
+
+.homeum{
+margin-top: 0%;
+}
+
+#principal{
+    width: 100%;
+    background-color: #fff;
+    display: block;
+}
+#imagemum{
+    width: calc(100% / 3);
+    background-color: #ee30a7;
+    float:left;
+    border: #fff 1px solid;
+    display: block;
+}
+#imagemum h1{
+    width: 45%;
+    float: left;
+    text-align: center;
+    margin: 10px;
+    color: #ffb5c5;
+    font-size: 1.1rem;
+}
+#imagemum h2{
+    width: 15%;
+   float: right;
+   display: block;
+   margin-top: 60px;
+   margin-right: 40px;
+   text-align: center;
+   color: #ffb5c5;
+   font-size: 1rem;
+}
+#imagemum h3{
+    display: block;
+    width: 40%;
+    float: left;
+    margin-top: 10px;
+    text-align: center;
+    margin-left: 20px;
+    color: #ffb5c5;
+}
+
+
+#botao{
+    background-color:#ee30a7 ;
+    width: 25%;
+    padding: 35px;
+    float: left;
+}
+    button{
+        background-color:#ffb5c5;
+        align-items: center;
+        float: left;
+        align-items: center;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+#principal img{
+    width: 50%;
+}
+#quem{
+    background-color: #ee30a7;
+    color: #fff;
+    width: 50%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+#quem h1{
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#quem h2{
+    width: 95%;
+    text-align: justify;
+    text-align: center;
+    margin-left: 25px;
+}
+
+ #fale{
+    background-color: #ffb5c5;
+    width: 100%;
+    height: 500px;
+    display: flex;
+}
+
+#fale h1{
+    color: #ee30a7;
+    margin-left: 15px;
+    font-size: 1rem;
+}
+#fale h2{
+    color: #ee30a7;
+    margin-left: 15px;
+    font-size: 0.8rem;
+
+}
+
+#redes {
+    width: 55%;
+    margin-left: 30px;
+    margin-top: 80px;
+}
+
+#pagamento {
+    width: 45%;
+    margin-top: 80px;
+    margin-right: 30px;
+}
+
+#pagamento img {
+    width: 100%;
+}
+#pagamento h1{
+    color: #ee30a7;
+    font-size: 1rem;
+}
+footer{
+    width: 100vw;
+    height: 5vh;
+    text-align: center;
+    background-color: #ffb5c5;
+    position: fixed;
+    bottom: 0;
+    line-height: 3vh;
+    color:#ee30a7;
+}
+
+#footer {
+    margin: 0%;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+
+}
+#footer h1{
+    font-size: 1rem;
+}
+
+@media (max-width: 767px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        position: fixed;
+    }
+
+    nav, section, header, footer {
+        width: 100vw;
+        min-width: 100vw;
+        max-width: 100vw;
+        overflow: auto;
+    }
+
+    #titulo {
+        width: 90%;
+    }
+
+    #titulo h1 {
+        margin: 0;
+    }
+
+    #logo {
+        width:20%;
+        float: left;
+        margin-right: 3px;
+    }
+    #logo img{
+        width: 100%;
+        margin:0%;
+    }
+    #logoum {
+        width:10%;
+        float: right;
+        margin-right: 3px;
+    }
+
+    #inicio #principal {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #imagemum {
+    width: 100%;
+    margin: 0;
+    }
+
+    #imagemum h1,
+    #imagemum h2 {
+        font-size: 1rem;
+      
+    }
+
+    #imagemum img{
+        margin-left: 25%;
+        margin-right: 10%;
+    }
+    #inicio{
+       min-height: 100vh; 
+       width: 100%;
+    }
+    #quem{
+        width: 50%;
+        text-align: center;
+    }
+    #quem h1{
+        font-size: 1rem;
+    }
+    #quem h2{
+        margin-left: 0px;
+        font-size: 1rem;
+    }
+    
+}
